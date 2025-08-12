@@ -77,7 +77,7 @@
   padding: 1rem;
   overflow: hidden;
   box-shadow: 0 0 15px rgba(0, 0, 0, 5);
-
+  
   h1 {
     font: var(--title-sm);
     color: var(--gray-200);
@@ -86,14 +86,24 @@
   }
 
   p {
-    font: --text-sm;
+    font: var(--text-sm);
     color: var(--gray-200);
   }
+}
+
+.grid-container a {
+  text-decoration: none;
 }
 
 .card-project img {
   width: 100%;
   border-radius: 10px;
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+
+.card-project:hover img {
+  transform: scale(1.1);
 }
 
 .service {
@@ -124,4 +134,63 @@
     color: var(--gray-200);
     padding-top: 8px;
   }
+
+  
+}
+
+.contacts {
+  height: 787px;
+  width: auto;
+  background-image: url(/assets/images/Background_Contacts.png);
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.direct {
+  max-height: 68px;
+  width: 400px;
+  background: var(--gray-400);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  text-align: start;
+  padding-left: 18px;
+ 
+  img {
+ 
+    padding: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 12px;
+    box-sizing: border-box;
+  }
+}
+
+ul {
+  align-items: center;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+  
+}
+
+ul a {
+  text-decoration: none;
+  transition: transform 0.4s ease;
+  box-sizing: border-box;
+  
+
+  span {
+    color: var(--gray-200);
+    font: var(--text-md);
+    width: 288px;
+  }
+}
+
+ul a:hover {
+  
+  transform: scale(1.1);
 }

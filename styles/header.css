@@ -41,3 +41,27 @@
     color: var(--red);
    }
 }
+
+#final {
+
+   text-align: center;
+   padding-top: 128px;
+   padding-bottom: 48px;
+
+   h1 {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      font: var(--title-md);
+      color: var(--gray-100);
+   }
+
+   h2 {
+      font: var(--subtitle);
+      color: #BB72E9;
+   }
+
+   p {
+      font: var(--text-md);
+      color: var(--gray-200);
+   }
+}
